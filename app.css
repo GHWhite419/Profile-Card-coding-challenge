@@ -1,0 +1,185 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    /* max-width: 100%; */
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Galen's code */
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    position: fixed;
+    margin-top: -47rem;
+    margin-left: -48rem;
+    max-width: 45rem;
+    z-index: -1;
+}
+
+.bot {
+    position: fixed;
+    margin-top: 11rem;
+    margin-left: 7rem;
+    max-width: 45rem;
+    z-index: -1;
+}
+
+article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 21rem;
+    border-radius: 1rem;
+}
+
+.bg-card {
+    border-radius: 1rem 1rem 0rem 0rem;
+    max-width: 100%;
+}
+
+.avatar {
+    border-radius: 4rem;
+    position: static;
+    margin-top: -3rem;
+    border: 0.35rem solid white;
+}
+
+section {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+header p {
+    padding-left: 0.5rem;
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0rem 1rem;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+span {
+    font-weight: 700;
+}
+
+li p {
+    font-size: 0.7rem;
+    letter-spacing: 0.12rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
